@@ -1,0 +1,6 @@
+name: duckduckgo-search
+description: Search via the duckduckgo engine
+stdio_server_params:
+  command: "uvx"
+  args:
+    - "duckduckgo-mcp-server"

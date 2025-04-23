@@ -1,0 +1,12 @@
+name: sudomcp/dune
+description: Make queries to Dune services
+config_schema:
+  dune_api_key:
+    type: string
+stdio_server_params:
+  command: "uv"
+  args:
+    - "run"
+    - "dune"
+  env:
+    DUNE_API_KEY: $dune_api_key

@@ -1,0 +1,8 @@
+name: sudomcp/simplecalc
+description: Perform simple arithmetic
+stdio_server_params:
+  command: uv
+  args:
+    - "run"
+    - "simplecalc"
+  cwd: .

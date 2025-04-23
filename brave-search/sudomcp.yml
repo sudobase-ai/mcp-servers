@@ -1,0 +1,17 @@
+name: brave-search
+enabled: false
+description: Search using the brave engine
+config_schema:
+  brave_api_key:
+    type: string
+stdio_server_params:
+  command: "docker"
+  args:
+    - "run"
+    - "--rm"
+    - "-i"
+    - "-e"
+    - "BRAVE_API_KEY"
+    - "mcp/brave-search"
+  env:
+    BRAVE_API_KEY: "$brave_api_key"
