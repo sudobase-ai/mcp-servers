@@ -1,0 +1,7 @@
+name: playwright
+description: Run playwright, A Model Context Protocol (MCP) server that provides browser automation capabilities using Playwright. This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.
+stdio_server_params:
+  command: "npx"
+  args:
+    - "@playwright/mcp@latest"
+local: true
