@@ -1,4 +1,5 @@
 name: brave-search
+title: Brave Search
 enabled: false
 description: Search using the brave engine
 config_schema:

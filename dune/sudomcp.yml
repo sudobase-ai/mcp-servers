@@ -1,4 +1,5 @@
 name: sudomcp/dune
+title: Dune Queries
 description: Make queries to Dune services
 config_schema:
   dune_api_key:

@@ -1,4 +1,5 @@
 name: duckduckgo-search
+title: DuckDuckGo Search
 description: Search via the duckduckgo engine
 stdio_server_params:
   command: "uvx"

@@ -1,4 +1,5 @@
 name: sudomcp/simplecalc
+title: Simple Calc
 description: Perform simple arithmetic
 stdio_server_params:
   command: uv
