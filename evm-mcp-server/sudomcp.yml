@@ -1,0 +1,8 @@
+name: mcpdotdirect/evm-mcp-server
+title: EVM MCP Server
+description: Comprehensive blockchain services across multiple EVM-compatible networks
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@mcpdotdirect/evm-mcp-server"
