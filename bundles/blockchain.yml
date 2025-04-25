@@ -1,0 +1,6 @@
+name: blockchain
+title: Blockchain
+description: Suite of blockchain-related MCP servers
+servers:
+  - sudomcp/dune
+  - mcpdotdirect/evm-mcp-server
