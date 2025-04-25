@@ -1,0 +1,23 @@
+name: supabase
+title: Supabase
+enabled: true
+description: Connect your Supabase projects to AI assistants
+config_schema:
+  supabase_access_token:
+    type: string
+    description: Your Supabase personal access token
+  read_only:
+    type: boolean
+    description: Whether to restrict database operations to read-only
+    default: false
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@supabase/mcp-server-supabase@latest"
+    - "--access-token"
+    - "$supabase_access_token"
+    # Conditionally include read-only flag based on the config value
+    - '${read_only ? "--read-only" : ""}'
+  env:
+    SUPABASE_ACCESS_TOKEN: "$supabase_access_token" 
