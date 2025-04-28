@@ -1,0 +1,8 @@
+name: sequential-thinking
+title: Sequential Thinking
+description: Tool for dynamic and reflective problem-solving through a structured thinking process.
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@modelcontextprotocol/server-sequential-thinking"
