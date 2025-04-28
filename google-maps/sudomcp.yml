@@ -1,0 +1,14 @@
+name: google-maps
+title: Google Maps
+description: "MCP Server for the Google Maps API.  To generate an API key see: https://developers.google.com/maps/documentation/javascript/get-api-key#create-api-keys"
+icon_url: https://www.gstatic.com/marketing-cms/assets/images/0f/9a/58f1d92b46069b4a8bdc556b612c/google-maps.webp=s96-fcrop64=1,00000000ffffffff-rw
+config_schema:
+  google_maps_api_key:
+    type: string
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@modelcontextprotocol/server-google-maps"
+  env:
+    "GOOGLE_MAPS_API_KEY": "$google_maps_api_key"
