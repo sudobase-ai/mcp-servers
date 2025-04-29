@@ -1,6 +1,7 @@
 name: blockchain
 title: Blockchain
 description: Suite of blockchain-related MCP servers
+icon_url: "https://cdn-icons-png.freepik.com/512/8757/8757988.png"
 servers:
   - sudomcp/dune
   - mcpdotdirect/evm-mcp-server

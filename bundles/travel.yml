@@ -1,0 +1,7 @@
+name: travel
+title: Travel
+description: MCP servers for travel planning
+icon_url: "https://cdn-icons-png.freepik.com/512/9041/9041439.png?ga=GA1.1.548476515.1745931437"
+servers:
+  - google-maps
+  - flights

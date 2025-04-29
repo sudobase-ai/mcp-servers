@@ -1,0 +1,15 @@
+name: flights
+title: Find Flights
+description: |
+  Search and retrieve flight information using Duffel API.  See [here](https://github.com/ravinahp/flights-mcp?tab=readme-ov-file#getting-your-duffel-api-key) to obtain a Duffel API key.
+config_schema:
+  duffel_api_key:
+    type: string
+stdio_server_params:
+  command: uvx
+  args:
+    - "--from"
+    - "git+https://github.com/ravinahp/flights-mcp"
+    - "flights-mcp"
+  env:
+    DUFFEL_API_KEY_LIVE: "$duffel_api_key"
