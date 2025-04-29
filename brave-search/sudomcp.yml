@@ -1,7 +1,7 @@
 name: brave-search
 title: Brave Search
 description: Search using the brave engine
-icon_url: "https://brave.com/static-assets/images/brave-logo-sans-text.svg"
+logo_url: "https://brave.com/static-assets/images/brave-logo-sans-text.svg"
 config_schema:
   brave_api_key:
     type: string
