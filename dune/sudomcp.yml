@@ -1,6 +1,7 @@
 name: sudomcp/dune
 title: Dune Queries
 description: Make queries to Dune services
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/dune/logo.svg?raw=true"
 config_schema:
   dune_api_key:
     type: string
