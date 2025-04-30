@@ -1,0 +1,17 @@
+name: nasa
+title: NASA
+enabled: true
+description: Unofficial NASA MCP Server
+logo_url: "https://www.nasa.gov/wp-content/uploads/2023/04/nasa-logo-web-rgb.png?raw=true"
+config_schema:
+  nasa_api_key:
+    type: string
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@programcomputer/nasa-mcp-server@latest"
+    - "-e"
+    - "NASA_API_KEY"
+  env:
+    NASA_API_KEY: "$nasa_api_key"
