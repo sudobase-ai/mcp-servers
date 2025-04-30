@@ -1,0 +1,12 @@
+name: arxiv
+title: arXiv
+enabled: true
+description: Access arXiv research repository
+logo_url: "https://cornell.box.com/v/arxiv-logo-png"
+stdio_server_params:
+  command: "uv"
+  args:
+    - "tool"
+    - "run"
+    - "arxiv-mcp-server"
+local: true
