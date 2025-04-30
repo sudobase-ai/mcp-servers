@@ -2,7 +2,7 @@ name: arxiv
 title: arXiv
 enabled: true
 description: Access arXiv research repository
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/arxiv/logo.svg?raw=true"
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/arxiv/logo.png?raw=true"
 stdio_server_params:
   command: "uv"
   args:
