@@ -1,6 +1,7 @@
 name: sequential-thinking
 title: Sequential Thinking
 description: Tool for dynamic and reflective problem-solving through a structured thinking process.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/sequentialthinking/logo.png?raw=true"
 stdio_server_params:
   command: "npx"
   args:
