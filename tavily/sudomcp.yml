@@ -1,0 +1,15 @@
+name: tavily
+title: Tavily
+logo_url: https://yyz2.discourse-cdn.com/flex004/user_avatar/community.tavily.com/system/96/107_2.png
+description: |
+  [Tavily](https://tavily.com/) provides seamless interaction with the tavily-search and tavily-extract tools, real-time web search capabilities through the tavily-search tool and intelligent data extraction from web pages via the tavily-extract tool.
+config_schema:
+  tavily_api_key:
+    type: string
+stdio_server_params:
+  command: npx
+  args:
+    - "-y"
+    - "tavily-mcp@latest"
+  env:
+    TAVILY_API_KEY: "$tavily_api_key"
