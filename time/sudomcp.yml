@@ -1,0 +1,15 @@
+name: time
+title: Time MCP Server
+local: true
+description: "A Model Context Protocol server that provides time and timezone conversion capabilities. This server enables LLMs to get current time information and perform timezone conversions using IANA timezone names, with automatic system timezone detection."
+logo_url: https://cdn-icons-png.flaticon.com/512/2784/2784459.png
+stdio_server_params:
+  command: "uvx"
+  args:
+    - "mcp-server-time"
+    - "--local-timezone"
+    - "$local_timezone"
+config_schema:
+  local_timezone:
+    type: string
+    description: "IANA timezone name to use as local timezone (e.g. 'America/New_York', 'Europe/London')"
