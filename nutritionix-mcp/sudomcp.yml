@@ -1,0 +1,20 @@
+name: nutritionix-mcp
+title: Nutritionix MCP
+description: A Model Context Protocol (MCP) server for integrating with the Nutritionix API, enabling AI agents to access food search, nutrition data, and exercise calorie estimates via natural language input.
+logo_url: "https://www.nutritionix.com/nix_assets/images/nutritionix_small.png"
+config_schema:
+  nutritionix_app_id:
+    type: string
+    description: "Your Nutritionix API App ID from developer.nutritionix.com"
+  nutritionix_app_key:
+    type: string
+    description: "Your Nutritionix API App Key from developer.nutritionix.com"
+stdio_server_params:
+  command: "uvx"
+  args:
+    - "nutritionix-mcp-server"
+    - "--app-id"
+    - "$nutritionix_app_id"
+    - "--app-key"
+    - "$nutritionix_app_key"
+local: false
