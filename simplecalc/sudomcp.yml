@@ -1,6 +1,7 @@
 name: sudomcp/simplecalc
 title: Simple Calc
 description: Perform simple arithmetic
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/simplecalc/logo.png?raw=true"
 stdio_server_params:
   command: uv
   args:

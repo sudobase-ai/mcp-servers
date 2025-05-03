@@ -1,6 +1,7 @@
 name: duckduckgo-search
 title: DuckDuckGo Search
 description: Search via the duckduckgo engine
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/duckduckgo-search/logo.png?raw=true"
 stdio_server_params:
   command: "uvx"
   args:
