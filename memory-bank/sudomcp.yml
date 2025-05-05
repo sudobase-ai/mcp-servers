@@ -1,0 +1,15 @@
+name: memory-bank
+title: Memory Bank
+description: MCP server implementation for remote memory bank management, inspired by Cline Memory Bank.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/memory-bank/logo.png?raw=true"
+config_schema:
+  memory_bank_root:
+    type: string
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@allpepper/memory-bank-mcp"
+  env:
+    MEMORY_BANK_ROOT: "$memory_bank_root"
+local: true
