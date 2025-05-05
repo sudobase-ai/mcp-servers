@@ -1,0 +1,27 @@
+name: mcp-stagehand
+title: Stagehand
+description: Stagehand MCP server for browser automation and orchestration, integrating Browserbase and OpenAI APIs.
+logo_url: "https://avatars.githubusercontent.com/u/120981996?s=200&v=4"
+config_schema:
+  browserbase_api_key:
+    type: string
+    description: "Your Browserbase API key"
+  browserbase_project_id:
+    type: string
+    description: "Your Browserbase project ID"
+  openai_api_key:
+    type: string
+    description: "Your OpenAI API key"
+  context_id:
+    type: string
+    description: "Your Context ID for Stagehand"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@browserbasehq/mcp-stagehand"
+  env:
+    BROWSERBASE_API_KEY: "$browserbase_api_key"
+    BROWSERBASE_PROJECT_ID: "$browserbase_project_id"
+    OPENAI_API_KEY: "$openai_api_key"
+    CONTEXT_ID: "$context_id"
