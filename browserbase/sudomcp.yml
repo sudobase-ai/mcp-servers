@@ -1,0 +1,19 @@
+name: mcp-browserbase
+title: Browserbase
+description: Browserbase is a platform for running headless browsers. If you're building automations that need to interact with websites, fill out forms, or replicate users actions, Browserbase manages that infrastructure so you don't have to maintain your own fleet of headless browsers.
+logo_url: "https://icons.duckduckgo.com/ip3/www.browserbase.com.ico"
+config_schema:
+  browserbase_api_key:
+    type: string
+    description: "Your browserbase API key"
+  browserbase_project_id:
+    type: string
+    description: "Your browserbase project ID"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@browserbasehq/mcp-browserbase"
+  env:
+    "BROWSERBASE_API_KEY": "$browserbase_api_key"
+    "BROWSERBASE_PROJECT_ID": "$browserbase_project_id"
