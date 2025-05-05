@@ -1,0 +1,9 @@
+name: mcp-webresearch
+title: WebResearch
+description: WebResearch MCP server for automated web research, data extraction, and summarization using the @mzxrai/mcp-webresearch package.
+logo_url: "https://avatars.githubusercontent.com/u/1689635?s=200&v=4"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@mzxrai/mcp-webresearch@latest"
