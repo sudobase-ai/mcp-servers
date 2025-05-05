@@ -1,0 +1,15 @@
+name: memory-graph
+title: Memory Graph
+description: Local memory graphs for persistent knowledge across chats.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/memory-graph/logo.png?raw=true"
+config_schema:
+  memory_file_path:
+    type: string
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@modelcontextprotocol/server-memory"
+  env:
+    MEMORY_FILE_PATH: "$memory_file_path"
+local: true
