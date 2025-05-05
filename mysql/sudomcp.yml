@@ -1,0 +1,65 @@
+name: dpflucas/mysql
+title: MySQL Database Access MCP Server
+description: |
+  Read-only access to MySQL databases. It allows you to:
+  - List available databases
+  - List tables in a database
+  - Describe table schemas
+  - Execute read-only SQL queries
+
+  Security Features:
+  - Read-only access: Only SELECT, SHOW, DESCRIBE, and EXPLAIN statements are allowed
+  - Query validation: Prevents SQL injection and blocks any data modification attempts
+  - Query timeout: Prevents long-running queries from consuming resources
+  - Row limit: Prevents excessive data return
+logo_url: "https://github.com/dpflucas/mysql-mcp-server/raw/master/logo.png"
+config_schema:
+  mysqlHost:
+    type: string
+    description: MySQL server hostname
+  mysqlPort:
+    type: number
+    description: MySQL server port
+    default: 3306
+  mysqlUser:
+    type: string
+    description: MySQL username
+  mysqlPassword:
+    type: string
+    description: MySQL password (optional)
+  mysqlDatabase:
+    type: string
+    description: Default database (optional)
+  mysqlConnectionLimit:
+    type: number
+    description: Maximum number of connections in the pool (optional)
+    default: 10
+  mysqlQueueLimit:
+    type: number
+    description: Maximum number of connection requests to queue (optional)
+    default: 0
+  mysqlConnectTimeout:
+    type: number
+    description: Connection timeout in milliseconds (optional)
+    default: 10000
+  mysqlIdleTimeout:
+    type: number
+    description: How long a connection can be idle before being released in milliseconds (optional)
+  mysqlMaxIdle:
+    type: number
+    description: Maximum number of idle connections to keep in the pool (optional)
+stdio_server_params:
+  command: npx
+  args:
+    - mysql-mcp-server
+  env:
+    MYSQL_HOST: $mysqlHost
+    MYSQL_PORT: $mysqlPort
+    MYSQL_USER: $mysqlUser
+    MYSQL_PASSWORD: $mysqlPassword
+    MYSQL_DATABASE: $mysqlDatabase
+    MYSQL_CONNECTION_LIMIT: $mysqlConnectionLimit
+    MYSQL_QUEUE_LIMIT: $mysqlQueueLimit
+    MYSQL_CONNECT_TIMEOUT: $mysqlConnectTimeout
+    MYSQL_IDLE_TIMEOUT: $mysqlIdleTimeout
+    MYSQL_MAX_IDLE: $mysqlMaxIdle
