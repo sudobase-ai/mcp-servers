@@ -1,0 +1,7 @@
+name: research
+title: Research
+description: MCP servers for academic research
+servers:
+  - arxiv
+  - exa-search
+  - time
