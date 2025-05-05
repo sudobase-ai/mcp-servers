@@ -1,0 +1,25 @@
+name: mcp-brightdata
+title: Bright Data
+description: Bright Data MCP server for proxy and browser automation. Configure your API token and optional settings for unlocker zone and browser control.
+logo_url: "https://icons.duckduckgo.com/ip3/brightdata.com.ico"
+config_schema:
+  api_token:
+    type: string
+    description: "Your Bright Data API token"
+  web_unlocker_zone:
+    type: string
+    description: "(Optional) Override the default mcp_unlocker zone name"
+    optional: true
+  browser_auth:
+    type: string
+    description: "(Optional) Enable remote browser control tools"
+    optional: true
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@brightdata/mcp"
+  env:
+    "API_TOKEN": "$api_token"
+    "WEB_UNLOCKER_ZONE": "$web_unlocker_zone"
+    "BROWSER_AUTH": "$browser_auth"
