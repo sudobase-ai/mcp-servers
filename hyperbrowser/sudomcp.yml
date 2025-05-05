@@ -1,0 +1,15 @@
+name: hyperbrowser
+title: Hyperbrowser
+description: "This is Hyperbrowser's Model Context Protocol (MCP) Server. It provides various tools to scrape, extract structured data, and crawl webpages. It also provides easy access to general purpose browser agents like OpenAI's CUA, Anthropic's Claude Computer Use, and Browser Use."
+logo_url: https://icons.duckduckgo.com/ip3/app.hyperbrowser.ai.ico
+config_schema:
+  hyperbrowser_api_key:
+    type: string
+    description: "API key for hyperbrowser"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "hyperbrowser-mcp"
+  env:
+    "HYPERBROWSER_API_KEY": "$hyperbrowser_api_key"
