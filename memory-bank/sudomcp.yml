@@ -1,4 +1,4 @@
-name: memory-bank
+name: alioshr/memory-bank
 title: Memory Bank
 description: MCP server implementation for remote memory bank management, inspired by Cline Memory Bank.
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/memory-bank/logo.png?raw=true"

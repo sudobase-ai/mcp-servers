@@ -1,0 +1,11 @@
+name: ipospelov/memory-bank
+title: Memory Bank
+description: This MCP server provides a structured documentation system for context preservation in AI assistant environments.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/memory-bank-ipospelov/logo.png?raw=true"
+stdio_server_params:
+  command: "uvx"
+  args:
+    - "--from"
+    - "git+https://github.com/ipospelov/mcp-memory-bank"
+    - "mcp_memory_bank"
+local: true

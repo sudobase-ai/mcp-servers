@@ -1,0 +1,18 @@
+name: mongodb-hosted
+title: MongoDB Hosted (by Atlas)
+description: MCP server for interacting with a hosted MongoDB instance on Atlas
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/mongo-db-local/logo.png?raw=true"
+config_schema:
+  atlas_client_id:
+    type: string
+  atlas_client_secret:
+    type: string
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "mongodb-mcp-server"
+  env:
+    MDB_MCP_API_CLIENT_ID: $atlas_client_id
+    MDB_MCP_API_CLIENT_SECRET: $atlas_client_secret
+local: true
