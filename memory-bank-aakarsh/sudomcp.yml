@@ -1,0 +1,10 @@
+name: aakarsh/memory-bank
+title: Memory Bank
+description: MCP server for managing Memory Banks, allowing AI assistants to store and retrieve information across sessions.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/memory-bank-aakarsh/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@aakarsh-sasi/memory-bank-mcp"
+local: true
