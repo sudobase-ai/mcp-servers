@@ -5,3 +5,4 @@ logo_url: "https://cdn-icons-png.freepik.com/512/9041/9041439.png?ga=GA1.1.54847
 servers:
   - google-maps
   - flights
+  - time
