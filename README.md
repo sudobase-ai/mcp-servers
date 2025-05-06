@@ -2,11 +2,11 @@
 
 ## Adding servers
 
-Open a PR to this repo, adding the appropriate yaml file.  See below for file details.
+Open a PR to this repo, adding the appropriate yaml file.  See below for file details.  The file must be placed in a new directory of this repo with an appropriate name.
 
 ## MCP Servers
 
-An mcp server is defined by a directory with a `sudomcp.yml` file, describing the MCP server and how to launch it.
+An MCP server is defined by a directory with a `sudomcp.yml` file, describing the MCP server and how to launch it.
 In some cases, the directory may also contain code, but in general commands such as `npx` and `uvx` are used to launch servers without needing to download code.
 
 Available attributes include:
@@ -25,6 +25,9 @@ For examples, see:
 - [Dune](dune/sudomcp.yml) for a hosted server with a single API key.
 - [Slack](slack/sudomcp.yml) for a hosted server with multiple config options.
 - [Google drive](google-drive/sudomcp.yml) for a local server with configuration options.
+
+### Name Collisions
+Server `name`s must be unique across all servers. Names may contain slashes, as in `my_github_handle/my_server`. Server `title`s do not need to be unique.
 
 ## Bundles
 
