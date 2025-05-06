@@ -1,0 +1,24 @@
+name: google-drive
+title: Google Drive
+description: Integrates with Google Drive to allow listing, reading, and searching files, as well as the ability to read and write to Google Sheets.
+logo_url: "https://github.com/rishipradeep-think41/drive-mcp/raw/master/logo.png"
+local: true
+config_schema:
+  client_id:
+    type: string
+    description: OAuth Client ID
+  client_secret:
+    type: string
+    description: OAuth Client Secret
+  gdrive_creds_dir:
+    type: string
+    description: Directory containing OAuth credentials JSON file
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@isaacphi/mcp-gdrive"
+  env:
+    CLIENT_ID: $client_id
+    CLIENT_SECRET: $client_secret
+    GDRIVE_CREDS_DIR: $gdrive_creds_dir

@@ -1,0 +1,16 @@
+name: jsonallen/perplexity
+title: Perplexity Web Search
+description: >
+  Provides web search functionality using Perplexity AI's API.
+  Lets you perform web search queries, filter by time period, and retrieve results via API.
+logo_url: "https://github.com/jsonallen/perplexity-mcp/raw/master/logo.png"
+config_schema:
+  perplexityApiKey:
+    type: string
+    description: The API key for the Perplexity AI server.
+stdio_server_params:
+  command: "uvx"
+  args:
+    - "perplexity-mcp"
+  env:
+    PERPLEXITY_API_KEY: $perplexityApiKey

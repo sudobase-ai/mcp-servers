@@ -1,0 +1,11 @@
+name: jbchouinard/document-reader
+title: Document Reader
+description: Interact with PDF and EPUB documents.
+enabled: false
+logo_url: "https://github.com/jbchouinard/mcp-document-reader/raw/master/logo.png"
+config_schema: {}
+stdio_server_params:
+  command: "poetry"
+  args:
+    - "run"
+    - "mcp-document-reader"

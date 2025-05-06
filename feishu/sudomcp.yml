@@ -1,0 +1,20 @@
+name: cso1z/feishu
+title: Feishu Document Queries
+description: Provides access to Feishu documents for AI-powered tools. Allows creating, reading, and editing documents, supports various content blocks, text formatting, lists, code blocks, and batch operations.
+logo_url: "https://github.com/cso1z/Feishu-MCP/raw/master/logo.png"
+config_schema:
+  feishu_app_id:
+    type: string
+    description: Feishu application ID
+  feishu_app_secret:
+    type: string
+    description: Feishu application secret
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "feishu-mcp"
+    - "--stdio"
+  env:
+    FEISHU_APP_ID: $feishu_app_id
+    FEISHU_APP_SECRET: $feishu_app_secret

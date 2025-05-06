@@ -1,0 +1,29 @@
+name: cyanheads/filesystem
+title: Filesystem MCP Server
+enabled: false
+description: |
+  Empower your AI agents with robust, platform-agnostic file system capabilities.
+  This Model Context Protocol (MCP) server provides a secure and reliable interface
+  for AI agents to interact with the local filesystem. It enables reading, writing,
+  updating, and managing files and directories, backed by a production-ready TypeScript
+  foundation featuring comprehensive logging, error handling, and security measures.
+logo_url: "https://github.com/cyanheads/filesystem-mcp-server/blob/master/logo.png?raw=true"
+config_schema:
+  FS_BASE_DIRECTORY:
+    type: string
+    description: "All file operations will be strictly confined within this directory and its subdirectories. (Optional, recommended for security)"
+  LOG_LEVEL:
+    type: string
+    description: "Controls the verbosity of logs. Options: error, warn, info, http, verbose, debug, silly."
+    default: "info"
+  LOG_DIR:
+    type: string
+    description: "Directory where log files (combined.log, error.log) will be stored. Defaults to ./logs."
+stdio_server_params:
+  command: "npx"
+  args:
+    - "filesystem-mcp-server"
+  env:
+    FS_BASE_DIRECTORY: $FS_BASE_DIRECTORY
+    LOG_LEVEL: $LOG_LEVEL
+    LOG_DIR: $LOG_DIR
