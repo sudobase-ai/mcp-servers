@@ -1,0 +1,15 @@
+name: mongodb-local
+title: MongoDB Local
+description: MCP server for interacting with a local MongoDB instance (via connection string)
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/mongo-db-local/logo.png?raw=true"
+config_schema:
+  connection_string:
+    type: string
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "mongodb-mcp-server"
+  env:
+    CONNECTION_STRING: $connection_string
+local: true
