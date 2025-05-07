@@ -18,7 +18,7 @@ stdio_server_params:
     - "@supabase/mcp-server-supabase@latest"
     - "--access-token"
     - "$supabase_access_token"
-    # Conditionally include read-only flag based on the config value
-    - '${read_only ? "--read-only" : ""}'
+    - "--read-only"
+    - "$read_only"
   env:
     SUPABASE_ACCESS_TOKEN: "$supabase_access_token" 
