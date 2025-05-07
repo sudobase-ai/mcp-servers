@@ -1,4 +1,4 @@
-name: mongodb-local
+name: mongodb
 title: MongoDB Local
 description: MCP server for interacting with a local MongoDB instance (via connection string)
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/mongo-db-local/logo.png?raw=true"
