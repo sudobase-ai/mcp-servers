@@ -1,4 +1,4 @@
-name: New Server CI
+name: MCP Servers CI
 
 on:
   pull_request:
