@@ -13,7 +13,7 @@ description: |
   - Query timeout: Prevents long-running queries from consuming resources
   - Row limit: Prevents excessive data return
 local: true
-logo_url: "https://github.com/dpflucas/mysql-mcp-server/raw/master/logo.png"
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/mysql/logo.png?raw=true"
 config_schema:
   mysqlHost:
     type: string
