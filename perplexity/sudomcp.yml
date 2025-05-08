@@ -3,7 +3,7 @@ title: Perplexity Web Search
 description: >
   Provides web search functionality using Perplexity AI's API.
   Lets you perform web search queries, filter by time period, and retrieve results via API.
-logo_url: "https://github.com/jsonallen/blob/master/perplexity-mcp/logo.png?raw=true"
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/perplexity/logo.png?raw=true"
 config_schema:
   perplexityApiKey:
     type: string
