@@ -1,7 +1,7 @@
 name: upstash/context7
 title: Context7 — Up-to-date Code Docs For Any Prompt
 description: Fetch up-to-date, version-specific documentation and code examples directly into your prompts. Eliminates outdated information and hallucinated APIs, providing accurate and relevant results for developers.
-logo_url: "https://github.com/upstash/context7/raw/master/logo.png"
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/context7/logo.png?raw=true"
 config_schema: {}
 stdio_server_params:
   command: "npx"
