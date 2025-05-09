@@ -1,6 +1,5 @@
-name: supabase-mcp
-title: Supabase MCP
-enabled: true
+name: supabase
+title: Supabase
 description: Connect your Supabase projects to AI assistants
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/supabase-mcp/icon.png?raw=true"
 config_schema:
@@ -15,4 +14,4 @@ stdio_server_params:
     - "--access-token"
     - "$supabase_access_token"
   env:
-    SUPABASE_ACCESS_TOKEN: "$supabase_access_token" 
+    SUPABASE_ACCESS_TOKEN: "$supabase_access_token"
