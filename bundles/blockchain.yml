@@ -4,4 +4,4 @@ description: Suite of blockchain-related MCP servers
 logo_url: "https://cdn-icons-png.freepik.com/512/8757/8757988.png"
 servers:
   - sudomcp/dune
-  - mcpdotdirect/evm-mcp-server
+  - mcpdotdirect/evm-server

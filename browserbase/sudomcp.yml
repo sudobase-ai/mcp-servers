@@ -1,4 +1,4 @@
-name: mcp-browserbase
+name: browserbase
 title: Browserbase
 description: Browserbase is a platform for running headless browsers. If you're building automations that need to interact with websites, fill out forms, or replicate users actions, Browserbase manages that infrastructure so you don't have to maintain your own fleet of headless browsers.
 enabled: false
