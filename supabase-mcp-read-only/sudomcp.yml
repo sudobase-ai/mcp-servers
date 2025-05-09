@@ -1,5 +1,5 @@
-name: supabase-mcp-read-only
-title: Supabase MCP (Read Only)
+name: supabase-read-only
+title: Supabase (Read Only)
 enabled: true
 description: Connect your Supabase projects to AI assistants
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/supabase-mcp-read-only/icon.png?raw=true"
@@ -16,4 +16,4 @@ stdio_server_params:
     - "$supabase_access_token"
     - "--read-only"
   env:
-    SUPABASE_ACCESS_TOKEN: "$supabase_access_token" 
+    SUPABASE_ACCESS_TOKEN: "$supabase_access_token"

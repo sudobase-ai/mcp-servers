@@ -1,4 +1,4 @@
-name: mcp-puppeteer
+name: puppeteer
 title: Puppeteer
 description: Automate and control headless Chrome or Chromium browsers for web scraping, testing, and automation using the Puppeteer library.
 logo_url: "https://icons.duckduckgo.com/ip3/pptr.dev.ico"
