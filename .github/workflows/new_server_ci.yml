@@ -28,4 +28,4 @@ jobs:
             --name mcppro-server \
             --entrypoint mcppro \
             --volume ${{ github.workspace }}:/app/mcp-servers-repo \
-            ghcr.io/sudobase-ai/sudomcp/mcppro:latest -- dev verify-servers
+            ghcr.io/sudobase-ai/sudomcp/mcppro:latest -- dev verify-servers --tools
