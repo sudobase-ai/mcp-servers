@@ -1,8 +1,8 @@
 name: stagehand
 title: Stagehand
 description: Stagehand MCP server for browser automation and orchestration, integrating Browserbase and OpenAI APIs.
-enabled: false
-logo_url: "https://avatars.githubusercontent.com/u/120981996?s=200&v=4"
+enabled: true
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/stagehand/logo.png?raw=true"
 config_schema:
   browserbase_api_key:
     type: string
