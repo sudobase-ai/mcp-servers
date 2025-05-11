@@ -1,16 +1,18 @@
 name: google-sheets
 title: Google Sheets
 local: true
-enabled: false
+enabled: true
 description: "MCP Server for Google sheets using OAuth 2.0. See https://github.com/xing5/mcp-google-sheets to get your credentials JSON file."
 logo_url: https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg
 config_schema:
   credentials_path:
     type: string
     description: "Absolute path to your local OAuth 2.0 Client ID JSON"
+    default: fake_google_sheets_credentials.json
   token_path:
     type: string
     description: "Absolute Path to store the generated OAuth token"
+    default: fake_google_sheets_token.json
 stdio_server_params:
   command: "uvx"
   args:
