@@ -1,0 +1,61 @@
+name: benborla-mysql
+title: MySQL Database Access MCP Server
+description: |
+  A Model Context Protocol server that provides access to MySQL databases. This server enables LLMs to inspect database schemas and execute SQL queries.
+local: true
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/mysql/logo.png?raw=true"
+config_schema:
+  mysqlHost:
+    type: string
+    description: MySQL server hostname
+    default: "127.0.0.1"
+  mysqlPort:
+    type: number
+    description: MySQL server port
+    default: 3306
+  mysqlUser:
+    type: string
+    description: MySQL username
+    default: "root"
+  mysqlPassword:
+    type: string
+    description: MySQL password (optional)
+    default: "your_password"
+  mysqlDatabase:
+    type: string
+    description: Default database (optional)
+    default: "your_database"
+  allowInsertOperation:
+    type: boolean
+    description: Allow INSERT operations
+    default: false
+  allowUpdateOperation:
+    type: boolean
+    description: Allow UPDATE operations
+    default: false
+  allowDeleteOperation:
+    type: boolean
+    description: Allow DELETE operations
+    default: false
+  path:
+    type: string
+    description: Run `echo "$(which node)/../"` in your terminal to get the path
+  nodePath:
+    type: string
+    description: Run `echo "$(which node)/../../lib/node_modules"` in your terminal to get the path
+stdio_server_params:
+  command: npx
+  args:
+    - "-y"
+    - "@benborla29/mcp-server-mysql"
+  env:
+    MYSQL_HOST: $mysqlHost
+    MYSQL_PORT: $mysqlPort
+    MYSQL_USER: $mysqlUser
+    MYSQL_PASS: $mysqlPassword
+    MYSQL_DB: $mysqlDatabase
+    ALLOW_INSERT_OPERATION: $allowInsertOperation
+    ALLOW_UPDATE_OPERATION: $allowUpdateOperation
+    ALLOW_DELETE_OPERATION: $allowDeleteOperation
+    PATH: $path
+    NODE_PATH: $nodePath
