@@ -148,7 +148,6 @@ async def main():
                         ),
                     )
                 )
-
         app = Starlette(
             routes=[
                 WebSocketRoute("/ws", endpoint=handle_ws),
@@ -182,7 +181,6 @@ async def main():
                         ),
                     )
                 )
-
         # Create Starlette app
         app = Starlette(routes=[
             Route("/sse", endpoint=handle_sse),
@@ -209,9 +207,8 @@ async def main():
                         notification_options=NotificationOptions(),
                         experimental_capabilities={},
                     ),
-                ),
+                )
             )
-
 if __name__ == "__main__":
     import asyncio
     asyncio.run(main())
