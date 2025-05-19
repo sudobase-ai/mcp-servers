@@ -1,0 +1,9 @@
+name: weather
+title: Weather
+local: true
+description: A Model Context Protocol (MCP) server for fetching weather data using the Open-Meteo API. 
+stdio_server_params:
+  command: "npx"
+  args:
+      - "-y"
+      - "@rehmatalisayany/weather-mcp-server"
