@@ -1,0 +1,31 @@
+name: excel
+title: Excel
+local: true
+description: Excel file processing server based on Model Context Protocol (MCP), providing functionalities for reading, writing, and analyzing Excel files.
+config_schema:
+  logPath:
+    type: string
+    description: Log files storage path
+  cacheMaxAge:
+    type: number
+    description: Cache expiration time (hours)
+  cacheCleanupInterval:
+    type: number
+    description: Cache cleanup interval (hours)
+  logRetentionDays:
+    type: number
+    description: Log file retention days
+  logCleanupInterval:
+    type: number
+    description: Log file cleanup interval (hours)
+stdio_server_params:
+  command: "npx"
+  args:
+      - "-y"
+      - "@zhiweixu/excel-mcp-server"
+  env:
+    LOG_PATH: $logPath
+    CACHE_MAX_AGE: $cacheMaxAge
+    CACHE_CLEANUP_INTERVAL: $cacheCleanupInterval
+    LOG_RETENTION_DAYS: $logRetentionDays
+    LOG_CLEANUP_INTERVAL: $logCleanupInterval
