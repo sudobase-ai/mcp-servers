@@ -1,7 +1,7 @@
 name: desktop-commander
 title: Desktop Commander
 description: Control desktop applications and perform system operations
-logo_url: ""
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/desktop-commander/logo.png?raw=true"
 config_schema: {}
 stdio_server_params:
   command: "npx"
