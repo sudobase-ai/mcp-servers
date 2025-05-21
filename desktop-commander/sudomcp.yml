@@ -1,0 +1,11 @@
+name: desktop-commander
+title: Desktop Commander
+description: Control desktop applications and perform system operations
+logo_url: ""
+config_schema: {}
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@wonderwhy-er/desktop-commander"
+local: true
