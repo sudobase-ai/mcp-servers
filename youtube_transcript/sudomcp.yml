@@ -1,0 +1,10 @@
+name: youtube-transcript
+title: YouTube Transcript
+description: MCP server for retrieving transcripts from YouTube videos.
+enabled: true
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/youtube_transcript/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@sinco-lab/mcp-youtube-transcript"
