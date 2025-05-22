@@ -1,0 +1,16 @@
+name: neon-local
+title: Neon (Local)
+description: MCP server for interacting with Neon Management API and databases
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/neon_local/logo.png?raw=true"
+config_schema:
+  neon_api_key:
+    type: string
+    description: Neon API key for authentication
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@neondatabase/mcp-server-neon"
+    - "start"
+    - "$neon_api_key"
+local: true

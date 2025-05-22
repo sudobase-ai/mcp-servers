@@ -1,0 +1,8 @@
+name: ableton
+title: Ableton Live
+description: MCP server for integrating with Ableton Live for music production and manipulation.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/ableton/logo.png?raw=true"
+stdio_server_params:
+  command: "uvx"
+  args:
+    - "ableton-mcp"
