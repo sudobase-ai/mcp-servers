@@ -1,0 +1,9 @@
+name: everything
+title: Everything (Test Server)
+description: MCP server that exercises all features of the MCP protocol for testing MCP clients.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/everything/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@modelcontextprotocol/server-everything"
