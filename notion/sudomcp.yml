@@ -1,0 +1,18 @@
+name: notion
+title: notion
+enabled: true
+description: "MCP server that allows AI agents to use the Notion API to add and retrieve context in Notion."
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/notion/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@notionhq/notion-mcp-server"
+  env:
+    "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer $ACCESS_TOKEN\", \"Notion-Version\": \"2022-06-28\" }"
+authentication:
+  client_id: "1ffd872b-594c-80b3-8fdc-0037bcbd2cb7"
+  redirect_url: "https://sudomcp-production-d71d.up.railway.app/mcpservers/notion/oauth_callback"
+  scope: ""
+  authenticate_url: "https://api.notion.com/v1/oauth/authorize"
+  access_token_url: "https://api.notion.com/v1/oauth/token"

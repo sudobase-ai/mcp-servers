@@ -3,9 +3,9 @@ title: Slack
 description: Access Slack API, enabling Claude to interact with Slack workspaces.
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/slack/logo.png?raw=true"
 config_schema:
-  slackBotToken:
-    type: string
-    description: The Bot User OAuth Token for the Slack app.
+#   slackBotToken:
+#     type: string
+#     description: The Bot User OAuth Token for the Slack app.
   slackTeamId:
     type: string
     description: The Slack Team ID for the workspace.
@@ -15,5 +15,11 @@ stdio_server_params:
     - "-y"
     - "@modelcontextprotocol/server-slack"
   env:
-    SLACK_BOT_TOKEN: $slackBotToken
+    SLACK_BOT_TOKEN: $ACCESS_TOKEN
     SLACK_TEAM_ID: $slackTeamId
+authentication:
+  client_id: "8913153815458.8956392643729"
+  redirect_url: "https://sudomcp-production-d71d.up.railway.app/mcpservers/slack/oauth_callback"
+  scope: "channels:history channels:read users:read users.profile:read chat:write reactions:write"
+  authenticate_url: "https:///slack.com/oauth/v2/authorize"
+  access_token_url: "https://slack.com/api/oauth.v2.access"
