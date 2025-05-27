@@ -1,5 +1,5 @@
 name: browsercat
-title: BrowserCat MCP Server
+title: BrowserCat
 description: MCP server for browser automation using BrowserCat's cloud browser service.
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/browsercat/logo.png?raw=true"
 enabled: true
