@@ -1,5 +1,5 @@
 name: supabase-read-only
-title: Supabase (Read Only)
+title: Supabase Read Only
 enabled: true
 description: Connect your Supabase projects to AI assistants
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/supabase-mcp-read-only/icon.png?raw=true"
