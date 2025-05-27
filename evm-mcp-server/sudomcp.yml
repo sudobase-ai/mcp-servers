@@ -1,5 +1,5 @@
 name: mcpdotdirect/evm-server
-title: EVM Server
+title: EVM Blockchains
 description: Comprehensive blockchain services across multiple EVM-compatible networks
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/evm-mcp-server/logo.png?raw=true"
 local: true

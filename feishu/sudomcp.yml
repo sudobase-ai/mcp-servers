@@ -1,5 +1,5 @@
 name: cso1z/feishu
-title: Feishu
+title: Feishu Documents
 description: Provides access to Feishu documents for AI-powered tools. Allows creating, reading, and editing documents, supports various content blocks, text formatting, lists, code blocks, and batch operations.
 logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/feishu/logo.png?raw=true"
 config_schema:
