@@ -19,7 +19,6 @@ stdio_server_params:
     SLACK_TEAM_ID: $slackTeamId
 authentication:
   client_id: "8913153815458.8956392643729"
-  redirect_url: "https://sudomcp-production-d71d.up.railway.app/mcpservers/slack/oauth_callback"
   scope: "channels:history channels:read users:read users.profile:read chat:write reactions:write"
   authenticate_url: "https:///slack.com/oauth/v2/authorize"
   access_token_url: "https://slack.com/api/oauth.v2.access"
