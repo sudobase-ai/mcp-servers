@@ -1,0 +1,11 @@
+name: neon-remote
+title: Neon
+description: Remote MCP server for interacting with Neon Management API and databases
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/neon_local/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "mcp-remote"
+    - "https://mcp.neon.tech/sse"
+local: false
