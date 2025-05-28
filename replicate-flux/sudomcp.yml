@@ -1,6 +1,7 @@
 name: replicate-flux
 title: Replicate Flux
 description: Replicate Flux MCP is an advanced Model Context Protocol (MCP) server that empowers AI assistants to generate high-quality images and vector graphics.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/replicate-flux/logo.png?raw=true"
 config_schema:
   replicateApiToken:
     type: string
