@@ -6,7 +6,6 @@ enabled: true
 config_schema:
   browsercat_api_key:
     type: string
-    default: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 stdio_server_params:
   command: "npx"
   args:
