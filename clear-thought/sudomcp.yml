@@ -1,0 +1,9 @@
+name: waldzell-mcp/clear-thought
+title: Clear Thought
+description: A MCP server providing systematic thinking, mental models, and debugging approaches for enhanced problem-solving capabilities.
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/clear-thought/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "@waldzellai/clear-thought"
