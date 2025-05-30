@@ -18,3 +18,4 @@ stdio_server_params:
   env:
     FEISHU_APP_ID: $feishu_app_id
     FEISHU_APP_SECRET: $feishu_app_secret
+enabled: false

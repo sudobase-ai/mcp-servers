@@ -14,3 +14,4 @@ stdio_server_params:
     - "start"
     - "$neon_api_key"
 local: true
+enabled: false
