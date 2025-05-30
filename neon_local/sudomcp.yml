@@ -10,7 +10,7 @@ stdio_server_params:
   command: "npx"
   args:
     - "-y"
-    - "@neondatabase/mcp-server-neon"
+    - "@neondatabase/mcp-server-neon@0.4.1"
     - "start"
     - "$neon_api_key"
 local: true
