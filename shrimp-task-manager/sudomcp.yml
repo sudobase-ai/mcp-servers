@@ -1,0 +1,26 @@
+name: shrimp-task-manager
+title: Shrimp Task Manager
+description: Task management tool for AI Agents with chain-of-thought, reflection, and style consistency features
+logo_url: "https://github.com/cjo4m06/mcp-shrimp-task-manager/blob/main/logo.svg?raw=true"
+config_schema:
+  data_dir:
+    type: string
+    description: Directory where Shrimp Task Manager stores task data and logs
+  templates_use:
+    type: string
+    description: Language template to use for the task manager
+    default: "en"
+  enable_gui:
+    type: boolean
+    description: Whether to enable the GUI interface
+    default: false
+stdio_server_params:
+  command: "npx"
+  args:
+    - "-y"
+    - "mcp-shrimp-task-manager"
+  env:
+    DATA_DIR: $data_dir
+    TEMPLATES_USE: $templates_use
+    ENABLE_GUI: $enable_gui
+local: true
