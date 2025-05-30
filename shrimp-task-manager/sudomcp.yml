@@ -1,7 +1,7 @@
 name: shrimp-task-manager
 title: Shrimp Task Manager
 description: Task management tool for AI Agents with chain-of-thought, reflection, and style consistency features
-logo_url: "https://github.com/cjo4m06/mcp-shrimp-task-manager/blob/main/logo.svg?raw=true"
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/shrimp-task-manager/logo.png?raw=true"
 config_schema:
   data_dir:
     type: string
