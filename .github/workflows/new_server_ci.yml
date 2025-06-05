@@ -19,7 +19,7 @@ jobs:
 
       - name: Pull docker image
         run: |
-          docker pull ghcr.io/sudobase-ai/sudomcp/mcppro:latest
+          docker pull ghcr.io/sudobase-ai/sudomcp/mcppro:master
 
       - name: Verify MCP servers
         run: |
@@ -28,4 +28,4 @@ jobs:
             --name mcppro-server \
             --entrypoint mcppro \
             --volume ${{ github.workspace }}:/app/mcp-servers-repo \
-            ghcr.io/sudobase-ai/sudomcp/mcppro:latest -- dev verify-servers --tools
+            ghcr.io/sudobase-ai/sudomcp/mcppro:master -- dev verify-servers --tools
