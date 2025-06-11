@@ -1,0 +1,19 @@
+name: google-calendar
+title: Google Calendar
+enabled: true
+description: Read, create, update and search for calendar events
+logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/google-calendar/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "@sudomcp/google-calendar-mcp"
+    - "--host-auth"
+  env:
+    "GOOGLE_API_ACCESS_TOKEN": "$ACCESS_TOKEN"
+authentication:
+  client_id: "995873111121-isela6se752bfm4t7ubn0djki9v3pv14.apps.googleusercontent.com"
+  scope: "https://www.googleapis.com/auth/calendar"
+  authenticate_url: "https://accounts.google.com/o/oauth2/auth"
+  access_token_url: "https://oauth2.googleapis.com/token"
+  introspect_get: "https://www.googleapis.com/oauth2/v1/tokeninfo"
+  
